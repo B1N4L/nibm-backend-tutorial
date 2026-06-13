@@ -1,0 +1,17 @@
+{
+  "name": "hello-node-app",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A minimal Node.js Express Hello World app (ES modules)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "console": "node hello.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "author": "",
+  "license": "MIT"
+}
