@@ -1,11 +1,13 @@
-Node.js Hello World (Dev note: ignore this file because because we switched to Express project)
+Node.js Express Hello World
 -------------------
 
 Files added:
 
 - `hello.js` — simple CLI script that prints "Hello, world!"
-- `server.js` — small HTTP server that responds with "Hello, world!" on port 3000
-- `package.json` — project metadata with `start` and `console` scripts
+- `server.js` — Express app shared by local Node and Vercel
+- `api/index.js` — Vercel serverless entrypoint
+- `vercel.json` — routing config for Vercel
+- `package.json` — project metadata with `start`, `dev`, and `console` scripts
 
 Quick start (PowerShell):
 
@@ -34,6 +36,31 @@ npm start
 npm install -g nodemon
 npm run dev
 ```
+
+Deploy to Vercel:
+
+1. Install the Vercel CLI:
+
+```powershell
+npm install -g vercel
+```
+
+2. Log in and deploy from the project folder:
+
+```powershell
+Set-Location 'C:\Users\Binal Lokitha\Desktop\Documents\GitHub\nibm\nibm-backend-tutorial'
+vercel
+```
+
+3. For production deployment:
+
+```powershell
+vercel --prod
+```
+
+Your deployed app will serve:
+- `/` → `Hello, world!`
+- `/json` → `{ "message": "Hello, world!" }`
 
 Test the HTTP server (PowerShell):
 
