@@ -1,0 +1,58 @@
+{
+  "provinces": [
+    { "id": 1, "name": "Western Province" },
+    { "id": 2, "name": "Central Province" }
+  ],
+
+  "districts": [
+    { "id": 1, "name": "Colombo", "province_id": 1 },
+    { "id": 2, "name": "Gampaha", "province_id": 1 },
+    { "id": 3, "name": "Kandy", "province_id": 2 },
+    { "id": 4, "name": "Matale", "province_id": 2 }
+  ],
+
+  "stations": [
+    { "id": 1, "name": "Colombo Central Police Station", "district_id": 1 },
+    { "id": 2, "name": "Colombo South Police Station", "district_id": 1 },
+    { "id": 3, "name": "Gampaha Police Station", "district_id": 2 },
+    { "id": 4, "name": "Negombo Police Station", "district_id": 2 },
+    { "id": 5, "name": "Kandy Police Station", "district_id": 3 },
+    { "id": 6, "name": "Peradeniya Police Station", "district_id": 3 },
+    { "id": 7, "name": "Matale Police Station", "district_id": 4 },
+    { "id": 8, "name": "Dambulla Police Station", "district_id": 4 }
+  ],
+
+  "vehicles": [
+    { "id": 1, "registration_number": "WP-AA-1001", "device_id": "TUK-DEV-0001", "station_id": 1 },
+    { "id": 2, "registration_number": "WP-AA-1002", "device_id": "TUK-DEV-0002", "station_id": 1 },
+    { "id": 3, "registration_number": "WP-AA-1003", "device_id": "TUK-DEV-0003", "station_id": 2 },
+    { "id": 4, "registration_number": "WP-AA-1004", "device_id": "TUK-DEV-0004", "station_id": 2 },
+
+    { "id": 5, "registration_number": "WP-GA-1005", "device_id": "TUK-DEV-0005", "station_id": 3 },
+    { "id": 6, "registration_number": "WP-GA-1006", "device_id": "TUK-DEV-0006", "station_id": 3 },
+    { "id": 7, "registration_number": "WP-GA-1007", "device_id": "TUK-DEV-0007", "station_id": 4 },
+    { "id": 8, "registration_number": "WP-GA-1008", "device_id": "TUK-DEV-0008", "station_id": 4 },
+
+    { "id": 9, "registration_number": "CP-KD-1009", "device_id": "TUK-DEV-0009", "station_id": 5 },
+    { "id": 10, "registration_number": "CP-KD-1010", "device_id": "TUK-DEV-0010", "station_id": 5 },
+    { "id": 11, "registration_number": "CP-KD-1011", "device_id": "TUK-DEV-0011", "station_id": 6 },
+    { "id": 12, "registration_number": "CP-KD-1012", "device_id": "TUK-DEV-0012", "station_id": 6 },
+
+    { "id": 13, "registration_number": "CP-MT-1013", "device_id": "TUK-DEV-0013", "station_id": 7 },
+    { "id": 14, "registration_number": "CP-MT-1014", "device_id": "TUK-DEV-0014", "station_id": 7 },
+    { "id": 15, "registration_number": "CP-MT-1015", "device_id": "TUK-DEV-0015", "station_id": 8 },
+    { "id": 16, "registration_number": "CP-MT-1016", "device_id": "TUK-DEV-0016", "station_id": 8 }
+  ],
+
+  "pings": [
+    { "id": 1, "vehicle_id": 1, "latitude": 6.9271, "longitude": 79.8612, "timestamp": "2026-06-14T08:00:00Z" },
+    { "id": 2, "vehicle_id": 1, "latitude": 6.9275, "longitude": 79.8618, "timestamp": "2026-06-14T08:05:00Z" },
+    { "id": 3, "vehicle_id": 1, "latitude": 6.9280, "longitude": 79.8624, "timestamp": "2026-06-14T08:10:00Z" },
+    { "id": 4, "vehicle_id": 1, "latitude": 6.9284, "longitude": 79.8629, "timestamp": "2026-06-14T08:15:00Z" },
+
+    { "id": 5, "vehicle_id": 2, "latitude": 6.9268, "longitude": 79.8610, "timestamp": "2026-06-14T08:00:00Z" },
+    { "id": 6, "vehicle_id": 2, "latitude": 6.9272, "longitude": 79.8615, "timestamp": "2026-06-14T08:05:00Z" },
+    { "id": 7, "vehicle_id": 2, "latitude": 6.9278, "longitude": 79.8620, "timestamp": "2026-06-14T08:10:00Z" },
+    { "id": 8, "vehicle_id": 2, "latitude": 6.9281, "longitude": 79.8626, "timestamp": "2026-06-14T08:15:00Z" }
+  ]
+}

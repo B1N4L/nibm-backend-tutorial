@@ -1,21 +1,21 @@
-// Express-based Hello World (ES modules)
-import express from 'express';
 
-export const app = express();
-const port = process.env.PORT || 4000;
+import {app} from './app.js';
+import 'dotenv/config.js';
+import './server.js';
+import dotenv from "dotenv";
 
-app.get('/', (req, res) => {
-  res.json({ status: 'ok', session: 'NB6007CEM S2' });
-});
+const envFile = process.env.NODE_ENV === "production"
+    ? ".env.production"
+    : ".env.development";
+dotenv.config({ path: envFile });
 
-// Example JSON endpoint
-app.get('/json', (req, res) => {
-  res.json({ message: 'Hello, world!' });
-});
+console.log(`ENV FILE: ${process.env.ENV_FILE || 'NOT FOUND'}`)
+console.log(`PORT: ${process.env.PORT || 'NOT FOUND'}`)
+const PORT = process.env.PORT || 4000;
 
 if (!process.env.VERCEL) {
-  app.listen(port, () => {
-    console.log(`Server running at http://localhost:${port}/`);
+  app.listen(PORT, () => {
+    console.log(`Server running at http://localhost:${PORT}/`);
   });
 }
 
